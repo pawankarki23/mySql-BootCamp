@@ -1,0 +1,18 @@
+5 minutes of mysql 
+
+TRY SQL URL
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_or
+
+SELECT * FROM Customers
+WHERE City = "London" OR Country = "UK";
+
+
+SELECT * FROM Products
+ORDER BY Price Desc;
+
+SELECT customerName, COUNT(*) AS 'number of orders'
+FROM Customers
+INNER JOIN Orders
+		ON Orders.customerID = customers.customerID
+GROUP BY customers.customerID;
+
